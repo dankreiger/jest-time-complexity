@@ -1,3 +1,5 @@
+const stringCheck = require('../../../helpers/stringCheck');
+
 function validShuffleO_N_another(a, b) {
   // check inputs for strings
   if(!stringCheck(a, b)) return false;
@@ -16,7 +18,7 @@ function validShuffleO_N_another(a, b) {
   for (let i = 0; i < b.length; i++) {
     let letter = b[i];
 
-    // can't find letter or lettr is zero, then it's not a valid shuffle
+    // can't find letter or letter is zero, then it's not a valid shuffle
     if (!lookup[letter]) {
       return false;
     } else {

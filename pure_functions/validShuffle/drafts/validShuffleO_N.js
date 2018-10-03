@@ -22,6 +22,7 @@ function validShuffleO_N(a, b){
     frequencyCounter2[i] = (++frequencyCounter2[i]) || 1;
   }    
 
+  // return false if character frequencies aren't equal between the strings
   for(let key in frequencyCounter1) {
     if(frequencyCounter1[key] !== frequencyCounter2[key]){
       return false;
