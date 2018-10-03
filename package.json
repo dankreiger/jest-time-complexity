@@ -1,0 +1,17 @@
+{
+  "name": "jest-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Dan Kreiger <dan@dankreiger.com> (http://www.dankreiger.com/)",
+  "license": "ISC",
+  "devDependencies": {
+    "jest-cli": "23.6.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
