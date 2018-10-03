@@ -1,7 +1,8 @@
 const stringCheck = require('../../../helpers/stringCheck');
 
+
 // O(n)
-function validAnagramO_N(a, b){
+function validShuffleO_N(a, b){
   // check inputs for strings
   if(!stringCheck(a, b)) return false;
 
@@ -32,4 +33,4 @@ function validAnagramO_N(a, b){
 }
 
 
-module.exports = validAnagramO_N;
+module.exports = validShuffleO_N;
