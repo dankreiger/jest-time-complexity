@@ -1,7 +1,7 @@
 const stringCheck = require('../../../helpers/stringCheck');
 
-// O(1)
-function validAnagramO_1(a, b){
+// O(n)
+function validAnagramO_N(a, b){
   // check inputs for strings
   if(!stringCheck(a, b)) return false;
 
@@ -32,4 +32,4 @@ function validAnagramO_1(a, b){
 }
 
 
-module.exports = validAnagramO_1;
+module.exports = validAnagramO_N;
