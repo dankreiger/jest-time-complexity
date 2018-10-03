@@ -12,20 +12,21 @@ const {
 } = require('./passwords/passwords');
 
 describe('validAnagram', () => {
-  it('returns true for shuffled password anagrams', () => {
+  it('returns true for valid anagrams', () => {
     expect(validAnagram(simple, shuffledSimple)).toBe(true);
     expect(validAnagram(pw1, shuffledPw1)).toBe(true);
     expect(validAnagram(pw2, shuffledPw2)).toBe(true);
   });
 
-  it('returns false for invalid shuffled password anagrams', () => {
+  it('returns false for invalid anagrams', () => {
     expect(validAnagram(pw1, pw2)).toBe(false);
     expect(validAnagram(shuffledPw1, shuffledPw2)).toBe(false);
     expect(validAnagram('somethingelse1', 'somethingelse')).toBe(false);
   });
 
 
-  it(`executes in less than 8 milliseconds given two shuffled passwords with ${pw1.length} characters`, () => {
+  // test performance with very long strongs
+  it(`executes in less than 8 milliseconds given two valid anagrams with ${pw1.length} characters`, () => {
     // expect to be an anagram
     expect(validAnagram(pw1, shuffledPw1)).toBe(true);
     
