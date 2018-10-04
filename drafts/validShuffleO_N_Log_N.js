@@ -1,4 +1,4 @@
-const stringCheck = require('../../../helpers/stringCheck');
+const stringCheck = require('./../helpers/stringCheck');
 
 
 // O(nlogn)

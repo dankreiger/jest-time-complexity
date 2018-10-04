@@ -29,8 +29,8 @@ module.exports = {
     "!**/node_modules/**",
     "!**/vendor/**",
     "!**/coverage/**",
-    "!**/pure_functions/validShuffle/drafts/**",
-    "!**/pure_functions/validShuffle/passwords/**"
+    "!**/drafts/**",
+    "!**/static/passwords/**"
   ],
   // The directory where Jest should output its coverage files
   coverageDirectory: "coverage",

@@ -1,4 +1,4 @@
-const stringCheck = require('../../../helpers/stringCheck');
+const stringCheck = require('./../helpers/stringCheck');
 
 function validShuffleO_N_another(a, b) {
   // check inputs for strings
