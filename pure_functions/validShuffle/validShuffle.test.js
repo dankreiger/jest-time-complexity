@@ -1,15 +1,6 @@
-const {
-  performance
-} = require('perf_hooks');
+const { performance } = require('perf_hooks');
 const validShuffle = require('./validShuffle');
-const {
-  simple,
-  shuffledSimple,
-  pw1,
-  shuffledPw1,
-  pw2,
-  shuffledPw2
-} = require('./../../static/passwords/passwords');
+const { simple, shuffledSimple, pw1, shuffledPw1, pw2, shuffledPw2 } = require('../../static/passwords');
 
 
 describe('validShuffle', () => {
