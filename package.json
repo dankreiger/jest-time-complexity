@@ -5,11 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "author": "Dan Kreiger <dan@dankreiger.com> (http://www.dankreiger.com/)",
   "license": "ISC",
   "devDependencies": {
     "jest-cli": "23.6.0"
+  },
+  "jest": {
+    "verbose": true
   }
 }
