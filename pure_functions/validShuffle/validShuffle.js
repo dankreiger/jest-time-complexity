@@ -7,6 +7,7 @@ const validShuffleO_N_Log_N = require('./../../drafts/validShuffleO_N_Log_N');
 
 function validShuffle(a, b){
   return validShuffleO_N_Log_N(a, b);
+  // return validShuffleO_N_another(a, b);
   // return validShuffleO_N(a, b);
 }
 
