@@ -8,12 +8,26 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
+  "lint-staged": {
+    "src/**/*.{js,json}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
   "author": "Dan Kreiger <dan@dankreiger.com> (http://www.dankreiger.com/)",
   "license": "ISC",
   "devDependencies": {
-    "jest-cli": "23.6.0"
+    "jest": "23.6.0",
+    "husky": "1.1.2",
+    "lint-staged": "7.3.0",
+    "prettier": "1.14.3"
   },
   "jest": {
     "verbose": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
